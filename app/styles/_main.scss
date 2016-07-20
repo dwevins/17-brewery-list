@@ -4,11 +4,13 @@
 }
 
 .row {
+  background: red;
   display: flex;
   flex-wrap: wrap;
 }
 
 .row-item {
+  display: flex;
   margin: $gutter;
   width: calc(100% / 3 - (2 * #{$gutter}));
   min-width: $min-content-width;
