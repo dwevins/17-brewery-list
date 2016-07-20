@@ -1,12 +1,15 @@
 .app-main {
+  padding: $gutter;
   flex-grow: 1;
   background-color: $black;
 }
 
 .row {
-  background: red;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: -$gutter 0;
 }
 
 .row-item {
@@ -17,15 +20,19 @@
   background-color: $white;
 
   &__image {
-    width: 30%;
+    width: 50%;
+    margin: 0.5 * $gutter;
 
     &--img {
+      vertical-align: middle;
       width: 100%;
     }
   }
 
   &__text {
+    margin: 0.5 * $gutter;
      display: flex;
-     justify-content: flex-end;
+     flex-direction: column;
+     justify-content: space-between;
   }
 }
