@@ -23,9 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     min-width: 0.4 * $min-content-width;
-    margin: 0.5 * $gutter;
 
     &--img {
       width: 100%;
