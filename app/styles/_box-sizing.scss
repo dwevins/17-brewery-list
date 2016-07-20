@@ -9,8 +9,32 @@ body {
   margin: 0;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   max-width: $max-content-width;
-  min-width: $min-content-width;
   margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-item {
+  margin: $gutter;
+  width: calc(100% / 3 - (2 * #{$gutter}))
+  min-width: $min-content-width;
+  flex-grow: 1;
+
+  &__image {
+    width: 100%;
+
+    &--img {
+      width: 100%;
+    }
+  }
 }
