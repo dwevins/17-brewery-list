@@ -11,6 +11,6 @@ body {
 
 .container {
   max-width: $max-content-width;
-  min-width: :$min-content-width;
+  min-width: $min-content-width;
   margin: 0 auto;
 }

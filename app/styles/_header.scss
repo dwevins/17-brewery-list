@@ -1,3 +1,7 @@
 .header {
   background-color: $header-blue;
+
+  &-content {
+    margin: 0;
+  }
 }
