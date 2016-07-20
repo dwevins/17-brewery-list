@@ -5,11 +5,11 @@
 }
 
 .row {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: -$gutter;
+
   justify-content: center;
-  margin: -$gutter 0;
 }
 
 .row-item {
@@ -20,19 +20,22 @@
   background-color: $white;
 
   &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
+    min-width: 0.4 * $min-content-width;
     margin: 0.5 * $gutter;
 
     &--img {
-      vertical-align: middle;
       width: 100%;
     }
   }
 
   &__text {
     margin: 0.5 * $gutter;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
