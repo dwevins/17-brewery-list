@@ -3,6 +3,22 @@
   background-color: $black;
 }
 
-.grid-item {
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-item {
+  margin: $gutter;
+  width: calc(100% / 3 - (2 * #{$gutter}));
+  min-width: $min-content-width;
   background-color: $white;
+
+  &__image {
+    width: 100%;
+
+    &--img {
+      width: 100%;
+    }
+  }
 }
