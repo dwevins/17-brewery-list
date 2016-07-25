@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports = function(environment) {
   var ENV = {
-    beerKey: process.env.BEER_KEY,
+    apiKey: process.env.API_KEY,
     modulePrefix: 'brewery-list',
     environment: environment,
     baseURL: '/',
